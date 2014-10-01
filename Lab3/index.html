@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Twitter</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="../css/default.css" rel="stylesheet">
+
+    <script src="../js/vendor/modernizr-2.6.2.min.js"></script>
+	
+</head>
+<body class="yui3-skin-sam">
+	<div id="container">
+
+		<header>
+			<h1>Twitter</h1>
+		</header>
+
+		<section id="user-profile">
+			<img src="../img/appendto.jpg" width="73" height="73" alt="">
+			<h2>@Username</h2>
+			<p class="user-tweets">Tweets: <span>0</span></p>
+			<p class="followers">Followers: <span>0</span></p>
+			<p class="following">Following: <span>0</span></p>
+		</section>
+
+		<section id="feed">
+
+			<ul id="tweets" class="normal-tweet show-promoted-tweets">
+				<li class="tweet promoted-tweet">
+					<div class="image">
+						<img height="48" width="48" src="../img/appendto.jpg" alt="">
+					</div>
+					<div class="content">
+						<div class="user">
+							<a class="user-name" href="http://twitter.com/appendTo" title="appendTo">appendTo</a>
+							<div class="full-name">appendTo</div>
+						</div>
+						<div class="text">A tweet here, a tweet there, a tweet everyewhere...</div>
+						<div class="time-stamp">3 minutes ago</div>
+					</div>
+				</li>
+
+				<li class="tweet promoted-tweet">
+					<div class="image">
+						<img height="48" width="48" src="../img/dougneiner.jpg" alt="">
+					</div>
+					<div class="content">
+						<div class="user">
+							<a class="user-name" href="http://twitter.com/dougneiner" title="dougneiner">dougneiner</a>
+							<div class="full-name">Doug Neiner</div>
+						</div>
+						<div class="text">I live where beauty meets design...</div>
+						<div class="time-stamp">17 minutes ago</div>
+					</div>
+				</li>
+
+				<li class="tweet normal-tweet">
+					<div class="image">
+						<img height="48" width="48" src="../img/ralphwhitbeck.jpg" alt="">
+					</div>
+					<div class="content">
+						<div class="user">
+							<a class="user-name" href="http://twitter.com/redwolves" title="redwolves">redwolves</a>
+							<div class="full-name">Ralph Whitbeck</div>
+						</div>
+						<div class="text">Now sit right back and you'll hear a tale...</div>
+						<div class="time-stamp">32 minutes ago</div>
+					</div>
+				</li>
+			</ul>
+			<div id="compose">
+			    <label>Account <input type="text" list="twitterhandles" placeholder="Twitter Handle"></label>
+			    <datalist id="twitterhandles">
+					<option value="@RedWolves">@RedWolves</option>
+					<option value="@appendto">@appendto</option>
+				</datalist>
+				<textarea rows="4" cols="40" placeholder="Add tweet here."></textarea>
+				<button class="send">Send</button>
+				<button class="refresh">Refresh</button>
+				<select class="refreshCount">
+					<option>05</option>
+					<option>10</option>
+					<option>25</option>
+					<option>50</option>
+					<option>100</option>
+				</select>
+			</div>
+			<div id="notification">This is a notification.</div>
+		</section>
+		<footer>
+			<div>A progressive demo for training labs</div>
+		</footer>
+	</div>
+</body>
+</html>
